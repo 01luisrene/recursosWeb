@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+		<!-- Metadata -->
+		<title>{% if page.title %}{{ page.title }} &#171; {{ site.title }}{% else %}{{site.title}} &#187; Blog de desarrollo web y móvil{% endif %}</title>
+		<!--
+			01LUISRENE
+		-->
+		<meta name="keywords" content="" />
+	  <meta name="description" content="{% if page.description %}{{ page.description }}{% else if content %}{{ site.description }}{% endif %}" />
+	  <meta name="robots" content="INDEX, FOLLOW" />
+	  <meta name="author" content="Luis Rene Mas Mas" />
+	  <meta name="application-name" content="01luisrene v1.0"/>
+	  <meta name="geo.placename" content="Trujillo" />
+	  <meta name="geo.region" content="PE" />
+
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+	  <meta name="theme-color" content="#98aaef" />
+
+	  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+	  <meta name="apple-mobile-web-app-capable" content="no" />
+
+	  <!-- Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="01luisrene" />
+		<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	  <meta name="og:description" content="{% if page.description %}{{ page.description }}{% else if content %}{{ site.description }}{% endif %}" />
+		<meta property="og:image" content="{% if page.photo_url %}{{site.url}}{{ page.photo_url }}{% else %}{{site.url}}{{ site.photo_url }}{% endif %}" />
+		<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+
+		<!-- links css -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | prepend: site.url }}" />
+		<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}" />
+		<link rel="stylesheet" href="{{ "/css/others.css" | prepend: site.url }}" />
+  </head>
+  <body class="template-no-home">
+  
+  {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post">
+				  <header class="post-header">
+				    <h1 class="post-title">{{ page.title }}</h1>
+				  </header>
+
+				  <section class="post-content">
+				    {{ content }}
+				  </section>
+
+			</article>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+    {% include autoreload-in-debug.html %}
+    
+  </body>
+</html>

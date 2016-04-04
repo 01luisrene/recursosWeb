@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="template-no-home">
+  {% include header.html %}
+    <div class="page-content">
+      <div class="wrapper">
+          <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+          </header>
+          <section class="post-content">
+            {{ content }}
+            <div class="container-geo">
+              <h3>Google Maps</h3> 
+              <p>Si desea hacerme una visita, se puede guiar con el siguiente mapa.</p>
+              <p>Destino: LOS 4 SUYOS.</p>
+              <p>Mis coordenadas (Lat, Lng): -8.049154699999999, -79.0586348</p>
+              <div id="map_canvas"></div>
+              <div id="message"></div>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+    {% include footer.html %}
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+    <!-- Llamo a mi script -->
+    <script src="{{"/assets/js/geo.HTML5.min.js" | prepend: site.url}}"></script>
+    <script>
+      if (Modernizr.geolocation) {
+        $('#message').text('Felicidades tu navegador soporta geolocalización ^.^'); 
+      } else {
+        $('#message').html('Oops! Tu navegador no soporta Geolocalización. Bájate <a href="https://www.google.com/chrome/browser/desktop/index.html">Google Chrome</a>, que es gratis!');
+        $('#map_canvas').html('<img src="/assets/images/gatito.jpg">');        
+      }
+    </script>
+    {% include autoreload-in-debug.html %}
+  </body>
+</html>

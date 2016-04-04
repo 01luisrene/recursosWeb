@@ -1,0 +1,72 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$text-white: #fff;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%); //ahun no usado
+
+// Width of the content area
+$content-width:    1000px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+$on-smartphone:	   480px;
+//mis variables
+$bg-main: #98aaef;
+$color-top-head: #bc1349;
+$color-bg-link-menu: #4E4E4E;
+$bg-menu: $color-bg-link-menu;
+$color-name-app: #e81a5c;
+$text-color-title-seccion: #5270e4;
+$bg-pasion: #2A2A2A;
+$text-color-pasion:#FEFF27;
+//iconos
+$color-ico-carita: #1e67e8;
+$color-ico-traje: #1f6161;
+$color-ico-sexo: #282828;
+$color-ico-corazon: #ff1336;
+$color-ico-maletin: #610310;
+$color-ico-cake: #de3de8;
+$color-ico-phone: #fff;
+$color-ico-ubicacion: #ff331f;
+//redes sociales
+$facebook: #3864a3;
+$google: #db4437;
+$twitter: #4391e8;
+$whatsapp: #13ad17;
+$youtube: #cc181e;
+$mail: #ffee2b;
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

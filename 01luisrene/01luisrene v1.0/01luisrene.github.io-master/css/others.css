@@ -1,0 +1,62 @@
+/* links */
+.lista-links li a, .lista-links li a:hover, .lista-links li a:link{
+	color: #444;
+}
+.lista-links li a:visited{
+	color: #000;
+}
+.lista-links li a:hover{
+	text-decoration: underline;
+}
+.lista-links{
+	list-style-type: none;
+}
+.lista-links li::before{
+	color: #EA501C;
+	content: "\f10c";
+	font-family: "FontAwesome";
+	margin-right: .5em;
+}
+
+/* tablero */
+ul.tablero li{
+	background-color: #8b9fed;
+  box-sizing: border-box;
+  box-shadow: 6px 4px 11px 0px #292829;
+  display: inline-block;
+  margin: 0 2% 30px 0;
+  padding: 0 5px 5px 5px;
+  overflow: hidden;
+  vertical-align: top;
+  width: 31.7%;
+}
+ul.tablero > li:nth-child(3n) {
+    margin-right: 0;
+}
+ul.tablero li a{
+	border-top: 3px solid transparent;
+	padding-top: 5px;
+	color: #333;
+	display: block;
+}
+ul.tablero li a:hover{
+	border-top: 3px solid #FF6262;
+	color: #0D0D0D;
+	text-decoration: none !important;
+}
+ul.tablero li a .fa{
+	display: block;
+	text-align: center;
+}
+
+/* cursos 2016 */
+.panel-default{
+	overflow-x: scroll;
+}
+.table #listCursos .culminado{
+	background: #00AA55;
+}
+.table #listCursos .culminado a{
+	text-decoration: underline;
+	color: #fff;
+}

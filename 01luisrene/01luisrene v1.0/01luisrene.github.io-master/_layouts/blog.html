@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  {% include head.html %}
+</head>
+  <body class="template-no-home">
+    {% include header.html %}
+    {% if page.photo_url%}
+    <div class="portada-post" style="background-image:url('{{ page.photo_url }}')"></div>
+  	{% endif %}
+	<div class="page-content">
+      <div class="wrapper">
+    	{{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+    {% include autoreload-in-debug.html %}
+  </body>
+
+</html>

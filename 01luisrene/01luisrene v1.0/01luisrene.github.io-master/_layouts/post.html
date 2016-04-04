@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <div class="addthis_sharing_toolbox" style="text-align: center; margin-bottom: -20px;"></div>
+  </header>
+
+  <section class="post-content" itemprop="articleBody">
+    {{ content }}
+  </section>
+  <h3>Te agradecería mucho si compartes este articulo con otros usuarios :)</h3>
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <div class="addthis_sharing_toolbox"></div>
+  <footer class="post-footer">
+    <figure class="author-image">
+        <a class="img" href="/" style="background-image: url(/assets/images/author.jpg)"><span class="hidden">Luis Rene Mas Mas Picture</span></a>
+    </figure>
+    <section class="author">
+      <h3><a href="/">Luis Rene Mas Mas</a></h3>
+        <p>{{ site.description_author }}</p>
+      <div class="author-meta">
+        <span class="author-location">
+          <i class="fa fa-map-marker"></i>
+          Trujillo, Perú
+        </span>
+        &nbsp;
+        <span class="author-link">
+          <i class="fa fa-link"></i>
+          <a href="http://01luisrene.com">http://01luisrene.com</a>
+        </span>
+      </div>
+    </section>
+  </footer>
+	<h2>Déjanos tu opinión</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      window.disqus_identifier = {% if page.tumblr_id %}"{{ page.tumblr_id }}"{% else %}"{{ page.id }}"{% endif %};
+    </script>
+    <script async src="http://hunch.disqus.com/embed.js"></script>
+    <noscript>Please enable JavaScript to view the
+      <a href="http://disqus.com/?ref_noscript=hunch">comments powered by Disqus.</a>
+    </noscript>
+    {% include disqus.html %}
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57004124cf559f51"></script>
+    <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
+</article>

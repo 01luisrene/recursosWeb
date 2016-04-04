@@ -1,0 +1,13 @@
+﻿# robots.txt
+User-agent: Mediapartners-Google
+Disallow: 
+
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /recursos/
+
+User-agent: *
+Allow: /
+Disallow: /recursos/
+
+Sitemap: http://01luisrene.com/sitemap.xml

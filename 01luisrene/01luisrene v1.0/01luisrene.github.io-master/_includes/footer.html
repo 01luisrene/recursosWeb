@@ -1,0 +1,43 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li><h3>{{ site.title }}</h3></li>
+          <div class="separador"></div>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
+
+      <div class="footer-col copy">
+        <p><i class="fa fa-copyright"></i> copyright 2015 ( Todos los Derechos Reservados ) - Web Master: <a href="/"><img class="ico-luisrene" src="{{ "/assets/images/01luisrene.png" | preppend: site.url }}" alt="Ico"> 01luisrene</a>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+<script src="{{ "/assets/js/libs/jquery.js" | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/libs/jquery-scrolltofixed-min.js" | prepend: site.url }}"></script>
+<script async src="{{ "/assets/js/01luisrene.min.js" | prepend: site.url }}"></script>
+

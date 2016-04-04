@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ "/assets/css/libs/vegas.min.css" | prepend: site.url }}"/>
+</head>
+  <body class="home">
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
+	<script src="http://01luisrene.com/assets/js/libs/vegas.min.js"></script>
+  <script async src="{{ "/assets/js/appVegas.min.js" | prepend: site.url }}"></script>
+  {% include autoreload-in-debug.html %}  
+  </body>
+</html>
