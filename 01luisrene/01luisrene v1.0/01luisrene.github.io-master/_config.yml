@@ -9,7 +9,7 @@ description_author: > # description author
 
 
 domain: ""
-url: http://01luisrene.com # the base hostname & protocol for your site
+#url: http://01luisrene.com # the base hostname & protocol for your site
 
 twitter_username: 01luisrene
 github_username:  01luisrene
