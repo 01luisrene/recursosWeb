@@ -1,0 +1,31 @@
+# Site settings
+permalink: /blog/:year/:month/:day/:title/
+title: 01LuisRene
+email: contacto@01luisrene.com
+01luisrene_version: 2.1
+autor_name: Luis Rene Mas Mas
+
+description: > # Descripción de 01luisrene
+  01luisrene: es el nombre de usuario que utilizo en las redes sociales (Twitter, Facebook, Google+); este sitio web a sido desarrollado para poder compartir contenidos de algunos lenguajes de programación (HTML5, CSS3, JAVASCRIPT, RUBY), PREPROCESADORES y mucho más.
+
+port: 3000
+host: localhost
+
+#url: http://01luisrene.com
+
+# Build settings
+markdown: kramdown
+
+#analítica
+google_analytics_id: UA-73408981-1
+
+#usuarios de redes sociales
+twitter: https://twitter.com/01luisrene
+github:  https://github.com/01luisrene
+facebook: https://www.facebook.com/01luisrene
+google_plus: https://plus.google.com/+01LuisRene/posts
+youtube: https://www.youtube.com/c/01luisrene
+medium: https://medium.com/@01luisrene
+
+#celular
+celular: +051 954336108

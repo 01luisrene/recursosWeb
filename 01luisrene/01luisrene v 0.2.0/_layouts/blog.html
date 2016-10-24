@@ -1,0 +1,76 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <!-- =========================
+   PRE CARGA
+  ============================== -->
+  <div class="preloader">
+    <div class="status">
+      <i class="fa fa-circle-o-notch fa-spin fa-4x fa-fw"></i>
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  {% include header.html %}
+  <div class="front">
+    <div class="wrapper">
+      <h1 class="name-author">Luis Rene Mas Mas</h1>
+      <img class="img-author" src="/assets/images/author_front.jpg" title="Autor"/>
+      <p class="description-author">
+        Hola, soy Técnico en Computación e Informática, me apasiona el desarrollo Frontend (<strong>HTM5</strong>, <strong>CSS3</strong>, <strong>JAVASCRIPT</strong>, <strong>Responsive Design</strong>), me encanta aprender programación web ya que es el futuro.
+      </p>
+      <ul class="lista-redes">
+        <li>
+          <a class="fa fa-facebook facebook" href="{{ site.facebook }}" target="_blank"></a>
+        </li>
+        <li>
+          <a class="fa fa-twitter twitter" href="{{ site.twitter}}" target="_blank"></a>
+        </li>
+        <li>
+          <a class="fa fa-youtube-square youtube" href="{{ site.youtube }}" target="_blank"></a>
+        </li>
+        <li>
+          <a class="fa fa-github-alt github" href="{{ site.github }}" target="_blank"></a>
+        </li>
+         <li>
+          <a class="fa fa-google-plus google-plus" href="{{ site.google_plus }}" target="_blank"></a>
+        </li>
+        <li>
+        <a class="fa fa-medium medium" href="{{ site.medium }}" target="_blank"></a>
+        </li>
+      </ul>
+      <img class="code-languages" src="/assets/images/code_languages.png" style="display:block;margin: 0 auto;" alt="Languages de programación">
+    </div>
+  </div>
+<!-- Publicidad -->
+{% if jekyll.environment == "production" %}
+<div align="center" class="wrapper pub-all-01luisrene">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- publicidad-front -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3311622925293570"
+     data-ad-slot="3768997246"
+     data-ad-format="auto"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+{% endif %}
+<!-- Fin publicidad -->
+
+<div class="page-content">
+  <div class="content__loop">
+  {{ content }}
+  </div>
+</div>
+  {% include footer.html %}
+</body>
+
+</html>

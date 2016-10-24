@@ -1,0 +1,31 @@
+---
+layout: blog
+description: "Blog 01luisrene: diseñado para publicar contenidos relacionado con HTML5, CSS3, JavaScript, etc. Y así poder compartirlo con los múltiples usuarios que están listos para aprender algo nuevo todos los días."
+photo_url: "/assets/images/cover_home.jpg"
+---
+<section class="post-list">
+{% for post in site.posts limit:15 %}
+  <article class="post">
+    {% if post.photo_url %}
+    <header>
+      <img class="image-post" src="{{ post.photo_url }}" alt="Imagen - {{ page.title }}">
+    </header>
+    {% endif %}
+    <section class="box-post-list">
+      <h2 class="title-list-post" >
+        <a href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+      </h2>
+      <span class="post-meta"><i class="fa fa-calendar-o"></i> {{ post.date | date: "%b %-d, %Y" }}</span>
+      {% if post.description %}
+      <span class="body-list-post">{{ post.description | strip_html}}...</span>
+      {% else %}
+      <span class="body-list-post">{{ post.excerpt | strip_html }}...</span>
+      {% endif %}
+      <a class="btn btn-primary" href="{{ post.url | prepend: site.url }}">Leer m&aacute;s <i class="fa fa-angle-double-right"></i></a>
+    </section>
+  </article>
+{% endfor %}
+</section>
+<div class="btn-links-articulos"><a href="/lista-articulos/">Ver más artículos...</a></div>
+
+<p class="rss-subscribe">Suscribe <a class="fa fa-rss-square fa-2x" href="{{ "/rss.xml" | prepend: site.url }}" target="_blank"></a> vía rss</p>

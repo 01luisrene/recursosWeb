@@ -1,0 +1,53 @@
+---
+layout: contacto
+title: Contacto
+description: "Pónganse en contacto cualquiera sea el motivo, si esta en mis manos se le dara solución :)"
+photo_url: "/assets/images/portadas/cover_contacto.png"
+permalink: /contacto/
+---
+<img src="/assets/images/portadas/cover_contacto.png" alt="Imagen de contacto" style="display:block;margin: -20px auto 0 auto; z-index: -1;">
+
+<hr class="separador_post"/>
+
+<p>Si tienes algo que contarme, proponerme algún tipo de trabajo relacionado con las tecnologías web; puedes contactarte con migo de múltiples formas.<p>
+
+<div class="box-contacto">
+<form class="formulario-contacto" action="//formspree.io/01luisrene@gmail.com" method="POST" id="js_formulario_contacto">
+    <h3 class="sub-title-contacto">Formulario de contacto</h3>
+    <!-- DO NOT EDIT BELOW THIS LINE -->
+    <input type="hidden" name="_subject" value="Mensaje de {{site.url}}" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="_next" value="{{site.url}}/thanks/" />
+    <div class="form-imput">
+      <input type="text" name="name" placeholder="Nombre completo" required></input>
+    </div>
+    <div class="form-imput"> 
+      <input type="email" name="email" placeholder="Correo electrónico" required></input>
+    </div>
+    <div class="form-imput">
+      <textarea name="message" id="" cols="30" rows="3" placeholder="Escribe tu mensaje :)" required></textarea>
+    </div>
+    <div class="form-imput">
+      <input class="btn btn-form" type="submit" value="Enviar mensaje"></input>
+    </div>
+</form>
+
+
+<div class="container-geo">
+<h3 class="sub-title-contacto">Mapa</h3>
+  <div id="map_canvas"></div>
+  <span class="title-geo">LOS 4 SUYOS - Trujillo - Perú</span>
+  <span>Coordenadas (Lat, Lng): -8.049154699999999, -79.0586348</span>
+</div>
+
+</div>
+
+<div class="box-item-contacto">
+  <div class="item-contacto">
+    <i class="fa ico-email fa-envelope" aria-hidden="true"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </div>
+  <div class="item-contacto">
+    <span><i class="fa ico-phone fa-mobile" aria-hidden="true"></i> {{site.celular}}</span>
+  </div>
+</div>
+

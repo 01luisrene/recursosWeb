@@ -1,0 +1,28 @@
+---
+layout: page
+title: Lista de artículos
+description: "Aquí podrás encontrar la lista de todos los artículos de 01luisrene.com ya que en la portada se muestran los artículos más recientes."
+permalink: /lista-articulos/
+---
+<div class="contenedor-archivos">
+	<p>Aquí podrás encontrar todos los artículos publicados en el blog.</p>
+	<section class="box-buscador">
+		<label for="js_campo_buscador"><i class="fa fa-search"></i></label>
+		<form>
+	  	<input class="campo-buscador" id="js_campo_buscador" placeholder="Buscador..." />
+		</form>
+	</section>
+<div class="box-resultados">
+	<section>
+		<ul class="lista-articulos" id="js_resultados"></ul>
+	</section>
+	
+	<ul class="lista-articulos" id="js_lista_articulos">
+	{% for post in site.posts %}
+	  <li>
+	    <p class="search-items"><a href="{{ post.url }}">{{ post.title }} &mdash; <b>({{ post.date | date: "%b %-d, %Y" }})</b></a></p>
+	  </li>
+	{% endfor %}
+	</ul>
+</div>
+</div>

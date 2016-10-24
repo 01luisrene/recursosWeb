@@ -1,0 +1,82 @@
+/*NOMBRE DEL DOMINIO*/
+
+Name dominio: http://01luisrene.com
+
+						[...]
+
+/*NOMBRE DE LA APLICACIÓN*/
+
+App Name: 01luisrene v2.1
+
+						[...]
+
+/* EQUIPO */
+                          
+Webmaster: Luis Rene Mas Mas
+Contacto: http://01luisrene.com/contacto/                          
+Site: 01luisrene[at]gmail.com                        
+Twitter: 01luisrene
+Facebook: 01luisrene                        
+Location: Trujillo, La Libertad, Perú                        
+                 
+                        [...]
+													
+/* AGRADECIMIENTO */
+							
+Name:		Danythza Quispe pingos
+Parentesco: 	Esposa =>[Lo Mejor del Mundo]
+Twitter: 	[at]danitza_aydee
+From: 		Chachapoyas, Amazonas, Perú
+
+Name: 		Daphne Nicoll Mas Quispe
+Parentesco: 	Hija =>[Mi princesita]
+From: 		Chachapoyas, Amazonas, Perú
+
+Name: 		Adalino Mas Trigoso
+Parentesco: 	Padre =>[Mi Orgulo]
+From: 		Chachapoyas, Amazonas, Perú
+
+Name: 		Hilda Esperanza Mas Culqui
+Parentesco: 	Madre =>[Mi Orgulo]
+From: 		Chachapoyas, Amazonas, Perú
+
+Name: 		Wander Rojas Briceño
+Parentesco: 	Amigo =>[Hermano]
+Talento: 	Desarrollador
+Email: 		rojitaspc[at]gmail.com
+From: 		Chachapoyas, Amazonas, Perú
+
+Name: 		Auria Mas Mas
+Parentesco: 	[Hermana]
+From: 		Chachapoyas, Amazonas, Perú
+
+Name: 		Marleni Mas Mas
+Parentesco: 	[Hermana]
+From: 		Chachapoyas, Amazonas, Perú
+
+Name: 		Esperanza Mas Mas
+Parentesco: 	[Hermana]
+From: 		Chachapoyas, Amazonas, Perú
+
+Name: 		Justina Mas Mas
+Parentesco: 	[Hermana]
+From: 		Chachapoyas, Amazonas, Perú
+
+Name: 		Aybe R. Mas Mas
+Parentesco: 	[Hermana]
+From: 		Chachapoyas, Amazonas, Perú					
+                 
+                        [...]
+                                                    
+/* SITE */
+                          
+Last update: 2016/06/21                      
+Standards: HTML5, CSS3, JavaScript, ...                        
+Components: html5.js, jQuery, Headroom.js, ghostHunter.js etc.
+Framework: Jekyll.
+Software: Sublime Tex 3, Google Chrome.
+Sistema de Versionado: GitHub.
+
+/* 
+Leyenda: [at] es representación del arroba para evitar span.
+*/

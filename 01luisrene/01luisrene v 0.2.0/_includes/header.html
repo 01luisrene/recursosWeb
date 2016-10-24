@@ -1,0 +1,56 @@
+<!--[if lt IE 9]>
+<div class="browser-antiguo">
+    <p class="browserupgrade">Está utilizando un navegador <strong>antiguo</strong>. Por favor <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia.</p>
+</div>
+ <![endif]-->
+<header id="header" class="site-header headroom" role="banner">
+  <div class="content__nav wrapper">
+    <figure class="figure-logo" id="js_img_logo">
+      <a href="{{site.url}}/"><img src="{{ "/assets/images/logo.png" prepend: site.url }}" alt="Logo" title="01LuisRene"></a>
+    </figure>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="lista-item">
+          <a href="/" title="Home"><i class="fa fa-home"></i> Home</a>
+       </li>
+       <li class="lista-item">
+         <a href="{{ site.url }}/contacto/"{% if page.url contains "/contacto/" %}class="active"{% endif %} title="Contacto">Contacto</a>
+       </li>
+       <li class="lista-item">
+         <a href="{{ site.url }}/sobre-mi/"{% if page.url contains "/sobre-mi/" %}class="active"{% endif %} title="Sobre mí">Sobre mí</a>
+       </li>
+       <li class="lista-item">
+         <a href="http://eepurl.com/bX5zC9" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><small>Subscribe</small>
+         </a>
+       </li>
+      </ul>
+    </nav>
+    <div class="icons-box">
+      <a href="/lista-articulos" class="icon-buscador fa fa-search" title="Buscador" id="js_icon_buscador"></a>
+      <a href="javascript:void(0)" class="icon-menu" id="js_icon_menu">
+        <span></span>
+      </a>
+    </div>
+  </div>
+</header>
+<div class="main-menu-mobile animated" id="js_box_main_menu" style="display: none;">
+  <nav class="main-menu">
+      <a class="fa fa-times icon-cerrar" href="#" id="js_icon_cerrar" title="Cerrar"></a>
+      <span><img class="logo-menu-mobile" src="{{'/assets/images/logo_footer.png' | prepend: site.url }}" alt="Logo"></span>
+     <ul class="lista-menu">
+        <li class="lista-item">
+          <a href="/" title="Home"><i class="fa fa-home"></i> Home</a>
+       </li>
+       <li class="lista-item">
+         <a href="{{ site.url }}/contacto/"{% if page.url contains "/contacto/" %}class="active"{% endif %} title="Contacto">Contacto</a>
+       </li>
+       <li class="lista-item">
+         <a href="{{ site.url }}/sobre-mi/"{% if page.url contains "/sobre-mi/" %}class="active"{% endif %} title="Sobre mí">Sobre mí</a>
+       </li>
+       <li class="lista-item">
+         <a href="http://eepurl.com/bX5zC9" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><small>Subscribe</small>
+         </a>
+       </li>
+     </ul>
+  </nav>
+</div>

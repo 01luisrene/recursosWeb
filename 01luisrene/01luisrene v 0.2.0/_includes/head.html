@@ -1,0 +1,71 @@
+	<meta charset="utf-8"/>
+
+	<!-- Metadata -->
+	<title>{% if page.title %}{{ page.title }} &#171; {{ site.title }}{% else %}{{site.title}} &#187; Blog de desarrollo web y móvil{% endif %}</title>
+	<!--
+		01LUISRENE
+	-->
+	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% endif %}" />
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else if content %}{{ site.description }}{% endif %}" />
+  <meta name="robots" content="INDEX, FOLLOW" />
+  <meta name="author" content="{{site.autor_name}}" />
+  <meta name="application-name" content="01luisreve v. {{ site.01luisrene_version }}"/>
+  <meta name="geo.placename" content="Trujillo" />
+  <meta name="geo.region" content="PE" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta name="theme-color" content="#98aaef" />
+
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+  <meta name="apple-mobile-web-app-capable" content="no" />
+
+  <!-- Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="01luisrene" />
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="og:description" content="{% if page.description %}{{ page.description }}{% else if content %}{{ site.description }}{% endif %}" />
+	<meta property="og:image" content="{% if page.photo_url %}{{site.url}}{{ page.photo_url }}{% else %}{{site.url}}{{ site.photo_url }}{% endif %}" />
+	<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+	<meta property="fb:app_id" content="128181427574206" />
+<!-- Fin Facebook -->
+<!-- Twitter -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="@01luisrene" />
+  <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else if content %}{{ site.description }}{% endif %}" />
+  <meta property="twitter:image" content="{% if page.photo_url %}{{site.url}}{{ page.photo_url }}{% else %}{{site.url}}{{ site.photo_url }}{% endif %}" />
+  <meta property="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
+<!-- Fin Twitter -->
+
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}"/>
+	<link type="text/plain" rel="author" href="{{ "/humans.txt" | prepend: site.url}}" />
+	<link rel="sitemap" type="application/xml" title="sitemap" href="{{ "/sitemap.xml" | prepend: site.url }}"/>
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}"/>
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="{{"/favicon.ico" | prepend: site.url }}"/>
+
+	<!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!--[if IE]>
+    <meta name="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+	<!-- CSS impresión -->
+	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}" type="text/css" media="all">
+	<!--[if lt IE 9]>
+		<style>
+			body{padding-top: 0 !important;}
+		</style>
+ <![endif]-->
+	<link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | prepend: site.url }}">
+	<link rel="stylesheet" href="{{ "/assets/css/libs/animate.min.css" | prepend: site.url }}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto+Condensed:400">
+	<link rel="stylesheet" href="{{ "/css/print.min.css" | prepend: site.url }}" type="text/css" media="print"/>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3311622925293570",
+    enable_page_level_ads: true
+  });
+</script>

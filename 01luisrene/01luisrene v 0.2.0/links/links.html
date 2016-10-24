@@ -1,0 +1,23 @@
+---
+layout: other
+title: Links
+description: "Aquí se encontrará la lista de los links de 01luisrene.com"
+permalink: /links/
+---
+<ul class="lista-links">
+	<li>
+		<a href="{{ site.url }}/">{{ site.url }}</a>
+	</li>
+	{% for my_page in site.pages %}
+    {% if my_page.title %}
+  <li>
+  	<a href="{{ my_page.url | prepend: site.url }}">{{ my_page.url | prepend: site.url }}</a>
+  </li>
+    {% endif %}
+  {% endfor %}
+	{% for page in site.posts %}
+	<li>
+		<a href="{{ site.url }}{{ page.url }}">{{ site.url }}{{ page.url }}</a>
+	</li>
+	{% endfor %}
+</ul>

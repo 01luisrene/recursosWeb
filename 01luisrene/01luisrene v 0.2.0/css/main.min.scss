@@ -1,0 +1,56 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+$roboto-font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$text-white: #fff;
+$background-color: #F4F4F4;
+$bg-inner					: #fff;
+$brand-color:      #0059B3;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%); //ahun no usado
+
+// Width of the content area
+$content-width:    1000px;
+$on-laptop:        800px;
+$on-palm:          600px;
+$on-smartphone:	   480px;
+
+//mis variables
+$bg-menu: #23222d;
+$color-name: #00974B;
+$color-name-app: rgba(0,117,234,1);
+$color-link-foo: #FD7E00;
+$color-green: rgba(25, 176, 119, 0.8);
+//redes sociales
+$facebook: #3864a3;
+$twitter: #4391e8;
+$youtube: #cc181e;
+$google-plus: #db4437;
+$github: #002F5E;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "layout",
+  "c",
+  "syntax-highlighting"
+;

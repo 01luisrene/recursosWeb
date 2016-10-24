@@ -1,0 +1,28 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+  {% include header.html %}
+    <div class="page-content">
+      <div class="wrapper">
+          <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+          </header>
+          <section class="post-content">
+            {{ content }}
+          </section>
+        </article>
+      </div>
+    </div>
+    {% include footer.html %}
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+    <!-- Llamo a mi script -->
+    <script src="{{"/assets/js/geo.HTML5.min.js" | prepend: site.url}}"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    
+    <!-- Publicidad -->
+    {% if jekyll.environment == "production" %}
+    <div align="center" class="wrapper pub-top-01luisrene">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!--Publish-001 -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3311622925293570"
+           data-ad-slot="4058532046"
+           data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </div>
+    {% endif %}
+    <!-- Fin publicidad -->
+
+    <div class="post-content">
+      <div class="wrapper inner-post">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <p class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+            {% if jekyll.environment == "production" %}
+            <div class="addthis_sharing_toolbox" style="text-align: center; margin-top: -15px;"></div>
+            {% endif %}
+            <img src="{{ page.photo_url | prepend: site.url }}" alt="Imagen - {{ page.title }}">
+          </header>
+          <section class="post-content" itemprop="articleBody">
+            {{ content }}
+          </section>
+          {% if jekyll.environment == "production" %}
+					<div align="center" class="pub-all-01luisrene">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+					<!-- publisher-footer-web -->
+					<ins class="adsbygoogle"
+						     style="display:block"
+						     data-ad-client="ca-pub-3311622925293570"
+						     data-ad-slot="2571465647"
+						     data-ad-format="auto"></ins>
+					<script>
+							(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+					</div>
+          {% endif %}
+          <h3>Si te gusto este artículo, compartelo para que tus amigos lo lean :)</h3>
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
+          <footer class="post-footer">
+            <figure class="author-image">
+                <a class="img" href="/" style="background-image: url(/assets/images/author.jpg)"><span class="hidden">Luis Rene Mas Mas Picture</span></a>
+            </figure>
+            <section class="author">
+              <h3><a href="{{site.url}}/">Luis Rene Mas Mas</a></h3>
+                <p>
+                Hola, soy Técnico en Computación e Informática, me apasiona el desarrollo Frontend (<strong>HTM5</strong>, <strong>CSS3</strong>, <strong>JAVASCRIPT</strong>, <strong>Responsive Design</strong>), me encanta aprender programación web ya que es el futuro.
+                </p>
+              <div class="author-meta">
+                <span class="author-location">
+                  <i class="fa fa-map-marker"></i>
+                  Trujillo, Perú
+                </span>
+              </div>
+            </section>
+          </footer>
+          <h2>Comparte tu opinión</h2>
+          {% if jekyll.environment == "production" %}
+              {% include disqus.html %}
+          {% endif %}
+        </article>
+        <aside class="widget-content">
+          {% if jekyll.environment == "production" %}
+          <div align="center" class="widget">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- widget-top -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:326px;height:280px"
+                 data-ad-client="ca-pub-3311622925293570"
+                 data-ad-slot="1225830047"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+          {% endif %}
+          <div class="widget google-plus">
+            <!-- Inserta esta etiqueta donde quieras que aparezca widget. -->
+            <div class="g-person" data-href="//plus.google.com/u/0/103985641320231803151" data-rel="author"></div>
+          </div>
+          <div class="widget ultimos-tweets">
+            <h2>Ultimos Tweets</h2>
+            <a class="twitter-timeline" href="https://twitter.com/01luisrene" data-tweet-limit="7" data-chrome="noborders  nofooter noheader transparent">Tweets by 01luisrene</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          {% if jekyll.environment == "production" %}
+          <div align="center" class="widget">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- publisher-widget-bottom -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3311622925293570"
+                 data-ad-slot="9028298448"
+                 data-ad-format="auto"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+          {% endif %}
+        </aside>
+      </div>
+    </div>
+    <!-- suscripción newsletter -->
+    {% include footer.html %}
+
+    {% if jekyll.environment == "production" %}
+      {% include addthis.html %}
+    {% endif %}
+    
+    <script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
+    <!-- Badge de Google Plus -->
+    <script src="https://apis.google.com/js/platform.js" async defer>
+      {lang: 'es'}
+    </script>    
+  </body>
+</html>
+
